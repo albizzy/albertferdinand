@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #FBFBFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EB3349;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #FBFBFF;
+    padding: 1rem 1rem;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    background: transparent;
+    padding: 1rem 1rem;
+}
+
+header>.navigation>.nav-description>h1 {
+    color: #020300;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link-wrapper {
+    background: transparent;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link-wrapper a {
+    text-decoration: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    color: #4e4e4e;
+    font-family: 'Nunito';
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.my-intro {
+    background: transparent;
+    width: 100%;
+    height: 80vh;
+    padding: 1rem 1rem;
+}
+
+.my-intro-wrapper {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-intro-wrapper .my-intro-greeting {
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.my-intro-wrapper .my-intro-greeting h1 {
+    font-size: 80px;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: linear-gradient(275deg, #F45C43, #EB3349);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-intro .my-intro-description {
+    background: transparent;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.my-intro .my-intro-description p {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+
+.my-intro-wrapper .my-intro-hire-button {
+    background: transparent;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.my-intro-wrapper .my-intro-hire-button button {
+    height: 50px;
+    width: 150px;
+    font-family: 'Nunito';
+    letter-spacing: 3px;
+    border: transparent;
+    outline: none;
+    font-size: 14px;
+    color: #FBFBFF;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #F45C43, #EB3349);
+    box-shadow: 0px 0px 20px #F45C43;
+}
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    padding: 2rem 2rem;
+}
+
+.about-content-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-card {
+    height: 100%;
+    background: transparent;
+}
+
+.about-card:first-child {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card:first-child h1 {
+    font-size: 30px;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    background: linear-gradient(275deg, #F45C43, #EB3349);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-card:nth-child(2) {
+    width: 69.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    padding: 1rem 1rem;
+    background: #FBFBFF;
+    box-shadow: 0 0 30px #b9b9b93f;
+    border-radius: 20px;
+}
+
+.profile-icon {
+    width: 100%;
+    height: 39.5%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
+}
+
+.about-card:nth-child(2) p {
+    background: transparent;
+    height: 59.5%;
+    padding: 1rem 1rem;
+    font-size: 16px;
+    line-height: 2;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+
+.services-container {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    padding: 2rem 2rem;
+}
+
+.services-content-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-card-wrapper {
+    width: 69.5%;
+    height: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-areas: 'header header header main main main' 'header header header main main main' 'article article article section section section' 'article article article section section section';
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.service-card-wrapper>div {
+    width: 100%;
+    height: 100%;
+    background: #FBFBFF;
+    box-shadow: 0 0 30px #b9b9b93f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.service-card-wrapper>div>h1 {
+    font-size: 20px;
+    font-family: 'Nunito';
+}
+
+.service-card1 {
+    grid-area: header;
+}
+
+.service-card2 {
+    grid-area: main;
+}
+
+.service-card3 {
+    grid-area: article;
+}
+
+.service-card4 {
+    grid-area: section;
+}
+
+.service-decription {
+    width: 40%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-decription h1 {
+    font-size: 30px;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    background: linear-gradient(275deg, #F45C43, #EB3349);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-card-wrapper>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Hobbies */
+
+.hobbies-container {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    padding: 2rem 2rem;
+}
+
+.hobbies-content-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.hobby-card-wrapper {
+    width: 69.5%;
+    height: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-areas: 'header header header main main main' 'header header header main main main' 'article article article section section section' 'article article article section section section';
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.hobby-card-wrapper>div {
+    width: 100%;
+    height: 100%;
+    background: #FBFBFF;
+    box-shadow: 0 0 30px #b9b9b93f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hobby-card-wrapper>div>h1 {
+    font-size: 20px;
+    font-family: 'Nunito';
+}
+
+.hobby-card1 {
+    grid-area: header;
+}
+
+.hobby-card2 {
+    grid-area: main;
+}
+
+.hobby-card3 {
+    grid-area: article;
+}
+
+.hobby-card4 {
+    grid-area: section;
+}
+
+.hobby-decription {
+    width: 33%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby-decription h1 {
+    font-size: 30px;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    background: linear-gradient(275deg, #F45C43, #EB3349);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hobby-card-wrapper>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+.my-social-container {
+    width: 100%;
+    height: 20vh;
+    background: transparent;
+    padding: 1rem 1rem;
+}
+
+.social-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-content-wrapper .icon {
+    background: transparent;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-content-wrapper .icon img {
+    width: 30px;
+    height: 30px
+}
+
+
+/*Media queries */
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     ::-webkit-scrollbar {
+        width: 0px;
+        background: #FBFBFF;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    header {
+        width: 100%;
+        height: 10%;
+        background: transparent;
+        padding: 1rem 1rem;
+    }
+    .nav-link-wrapper {
+        display: none;
+    }
+    .my-intro {
+        background: transparent;
+        width: 100%;
+        height: 50vh;
+        padding: 1rem 1rem;
+    }
+    .my-intro-wrapper .my-intro-greeting {
+        background: transparent;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .my-intro-wrapper .my-intro-greeting h1 {
+        font-size: 50px;
+        font-family: 'Nunito Sans';
+        font-weight: 800;
+        letter-spacing: 4px;
+        background: linear-gradient(275deg, #F45C43, #EB3349);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .my-intro .my-intro-description {
+        background: transparent;
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .my-intro .my-intro-description p {
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-family: 'Nunito';
+        font-weight: 600;
+    }
+    .my-intro-wrapper .my-intro-hire-button {
+        background: transparent;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    .my-intro-wrapper .my-intro-hire-button button {
+        height: 40px;
+        width: 120px;
+        font-family: 'Nunito';
+        letter-spacing: 1px;
+        border: transparent;
+        outline: none;
+        font-size: 12px;
+        color: #FBFBFF;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #F45C43, #EB3349);
+        box-shadow: 0px 0px 20px #f7654e6e;
+    }
+    .about-container {
+        width: 100%;
+        height: 50vh;
+        background: transparent;
+        padding: .5rem .5rem;
+    }
+    .about-content-wrapper {
+        width: 100%;
+        height: 100%;
+        background: #FBFBFF;
+        box-shadow: 0 0 30px #b9b9b93f;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-card:first-child {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+    .about-card:first-child h1 {
+        font-size: 20px;
+        font-family: 'Nunito Sans';
+        font-weight: 800;
+        background: linear-gradient(275deg, #F45C43, #EB3349);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .about-card:nth-child(2) {
+        background: transparent;
+        box-shadow: none;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    .profile-icon {
+        width: 100%;
+        height: 39.5%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-icon img {
+        width: 100px;
+        height: 100px;
+    }
+    .about-card:nth-child(2) p {
+        font-size: 12px;
+        line-height: 1.8;
+        font-family: 'Nunito';
+        font-weight: 600;
+    }
+    .services-container {
+        width: 100%;
+        height: 50vh;
+        background: transparent;
+        padding: .5rem .5rem;
+    }
+    .services-content-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: #FBFBFF;
+        box-shadow: 0 0 30px #b9b9b93f;
+    }
+    .service-decription {
+        width: 100%;
+        height: 20%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-decription h1 {
+        font-size: 20px;
+        font-family: 'Nunito Sans';
+        font-weight: 800;
+        background: linear-gradient(275deg, #F45C43, #EB3349);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .service-card-wrapper {
+        width: 100%;
+        height: 79.5%;
+        background: transparent;
+        display: grid;
+        grid-template-areas: 'header header header main main main' 'header header header main main main' 'article article article section section section' 'article article article section section section';
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .service-card-wrapper>div {
+        width: 100%;
+        height: 100%;
+        background: #FBFBFF;
+        box-shadow: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .service-card-wrapper>div>h1 {
+        font-size: 12px;
+        font-family: 'Nunito';
+    }
+    .service-card-wrapper>div>img {
+        width: 35px;
+        height: 35px;
+    }
+    .hobbies-container {
+        width: 100%;
+        height: 50vh;
+        background: transparent;
+        padding: .5rem .5rem;
+    }
+    .hobbies-content-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: #FBFBFF;
+        box-shadow: 0 0 30px #b9b9b93f;
+    }
+    .hobby-decription {
+        width: 100%;
+        height: 20%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hobby-decription h1 {
+        font-size: 20px;
+        font-family: 'Nunito Sans';
+        font-weight: 800;
+        background: linear-gradient(275deg, #F45C43, #EB3349);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .hobby-card-wrapper {
+        width: 100%;
+        height: 79.5%;
+        background: transparent;
+        display: grid;
+        grid-template-areas: 'header header header main main main' 'header header header main main main' 'article article article section section section' 'article article article section section section';
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .hobby-card-wrapper>div {
+        width: 100%;
+        height: 100%;
+        background: #FBFBFF;
+        box-shadow: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hobby-card-wrapper>div>h1 {
+        font-size: 12px;
+        font-family: 'Nunito';
+    }
+    .hobby-card-wrapper>div>img {
+        width: 35px;
+        height: 35px;
+    }
+    .my-social-container {
+        width: 100%;
+        height: 10vh;
+        background: transparent;
+        padding: 1rem 1rem;
+    }
+    .social-content-wrapper {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-content-wrapper .icon {
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .social-content-wrapper .icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
