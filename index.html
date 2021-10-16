@@ -6,88 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert Ferdinand - This is my portfolio</title>
-    <script src="https://unpkg.com/ityped@1.0.3"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- animate 0n scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0f6b1e9c08.js" crossorigin="anonymous"></script>
+
+    <!-- main css styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <div class="navigation">
-            <div class="nav-description">
-                <h1>Myportfolio.</h1>
-            </div>
-
-            <div class="nav-link-wrapper">
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Contact Me.</a>
-            </div>
-        </div>
-    </header>
-
     <section>
-        <div class="my-intro">
-            <div class="my-intro-wrapper">
-                <div class="my-intro-greeting">
-                    <h1>Hello</h1>
+        <div class="container-fluid my-intro-container" id="home">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- nav-bar -->
+                    <section id="nav-bar">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#" style="width: 150px; color: var(--accent-color);font-weight: 700;">
+                                    Albert Ferdinand
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" style="color: #fff;"></i>
+              </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav d-flex align-items-center">
+                                        <li class="nav-item me-3 mb-3">
+                                            <a class="active-state" aria-current="page" href="#home">Home</a>
+                                        </li>
+                                        <li class="nav-item me-3 mb-3">
+                                            <a class="active-state" href="#about">About</a>
+                                        </li>
+                                        <li class="nav-item me-3 mb-3">
+                                            <a class="active-state" href="#catalog">Catalog</a>
+                                        </li>
+                                        <li class="nav-item me-3 mb-3">
+                                            <a class="active-state" href="#services">Services</a>
+                                        </li>
+
+                                        <li class="nav-item me-3 mb-3">
+                                            <a class="active-state" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
                 </div>
-
-                <div class="my-intro-description">
-                    <p>I'm Albert Ferdinand <br> <span class="type1"></span></p>
-                </div>
-
-                <div class="my-intro-hire-button">
-                    <button>Hire Me</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="about-container">
-            <div class="about-content-wrapper">
-                <div class="about-card">
-                    <h1>About Me</h1>
-                </div>
-
-                <div class="about-card">
-                    <div class="profile-icon" data-aos="fade-up">
-                        <img src="assets/icons/man.svg" alt="profile-avatar">
-                    </div>
-                    <p data-aos="fade-right" data-aos-duration="400">I'm a young self-taught developer competent in web development, android development and Ui-Ux design I got them all covered. I also design pretty stuff. Looking foward to working with y'all.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="services-container">
-            <div class="services-content-wrapper">
-
-                <div class="service-decription">
-                    <h1>Services</h1>
-                </div>
-
-                <div class="service-card-wrapper">
-                    <div class="service-card1" data-aos="fade-left" data-aos-duration="200">
-                        <h1>Web</h1>
-                        <img src="assets/icons/programming.svg" alt="web-logo">
-                    </div>
-                    <div class="service-card2" data-aos="fade-left" data-aos-duration="200">
-                        <h1>Graphics</h1>
-                        <img src="assets/icons/graphic-designer.svg" alt="graphics-logo">
-                    </div>
-                    <div class="service-card3" data-aos="fade-right" data-aos-duration="200">
-                        <h1>Android</h1>
-                        <img src="assets/icons/android.svg" alt="android-logo">
-                    </div>
-                    <div class="service-card4" data-aos="fade-right" data-aos-duration="200">
-                        <h1>Ui/Ux</h1>
-                        <img src="assets/icons/ui-design.svg" alt="android-logo">
+                <div class="col-md-12 mt-5 my-description d-flex  flex-column justify-content-around" style="height: 600px;">
+                    <h1 style="font-size: 60px;">I'm Albert, <br> A Digital Creator.</h1>
+                    <p style="font-size: 20px;">I make awesome websites, softwares, illustrations, digital arts, fine arts, music beats and graphic products</p>
+                    <div class="cta-area">
+                        <button class="btn browse-btn" id="browse-btn" onclick="location.href='#catalog'">Browse Catalog</button>
                     </div>
                 </div>
             </div>
@@ -95,29 +76,26 @@
     </section>
 
     <section>
-        <div class="hobbies-container">
-            <div class="hobbies-content-wrapper">
-
-                <div class="hobby-decription">
-                    <h1>Hobbies</h1>
+        <div class=" container-fluid about-container">
+            <div class="row d-flex align-items-center justify-content-around" id="about">
+                <div class="col-md-4 d-flex align-items-center" style="height: 600px;">
+                    <div class="image-card"></div>
                 </div>
 
-                <div class="hobby-card-wrapper">
-                    <div class="service-card1" data-aos="fade-right" data-aos-duration="200">
-                        <h1>Drawing</h1>
-                        <img src="assets/icons/tools.svg" alt="drawing-logo">
+                <div class="col-md-6 d-flex flex-column justify-content-center mt-5" style="height: 600px;">
+                    <div class="about-header">
+                        <h1 style="font-size: 60px;">About me</h1>
                     </div>
-                    <div class="hobby-card2" data-aos="fade-right" data-aos-duration="200">
-                        <h1>Photography</h1>
-                        <img src="assets/icons/tripod.svg" alt="photography-logo">
+                    <div class="about-description">
+                        <p style="font-size: 20px;color: var(--text-color-shade);">My name is Albert Ferdinand Mwasisoba, I'm a young creative from Tanzania offering digital services. I am currently working as a freelancer and you can refer to me as: </p>
+                        <ul>
+                            <li>Artist</li>
+                            <li>Graphic Designer</li>
+                            <li>Software Developer</li>
+                        </ul>
                     </div>
-                    <div class="hobby-card3" data-aos="fade-right" data-aos-duration="200">
-                        <h1>Music</h1>
-                        <img src="assets/icons/earphones.svg" alt="music-logo">
-                    </div>
-                    <div class="hobby-card4" data-aos="fade-right" data-aos-duration="200">
-                        <h1>Travel</h1>
-                        <img src="assets/icons/travel.svg" alt="travel-logo">
+                    <div class="hire-me-area">
+                        <button class="btn hire-me-btn" id="hire-me-btn">Hire Me</button>
                     </div>
                 </div>
             </div>
@@ -125,18 +103,261 @@
     </section>
 
     <section>
-        <div class="my-social-container">
-            <div class="social-content-wrapper">
-                <div class="icon">
-                    <img src="assets/icons/github.svg" alt="github-icon">
-                    <img src="assets/icons/linkedin.svg" alt="linkedin-icon">
-                    <img src="assets/icons/twitter.svg" alt="twitter-icon">
-                    <img src="assets/icons/instagram.svg" alt="instagram-icon">
+        <div class="container-fluid catalog-container">
+            <div class="row">
+                <div class="col-md-12 catalog-header" id="catalog">
+                    <h1 style="font-size: 60px;">My Catalog</h1>
+                    <p style="font-size: 20px;" class="mt-5">Welcome to my catalog, the showroom to most of my amazing creations with even a cheaper price to pay.</p>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="col-md-4 card graphics-card">
+                            <div class="package-image graphics-package"></div>
+                            <div class="package-name">
+                                <h1 style="font-size: 30px;">Graphics Package</h1>
+                            </div>
+                            <div class="package-description">
+                                <ul style="font-size: 15px;">
+                                    <li>Logo design</li>
+                                    <li>Business Card Design</li>
+                                    <li>Bronchures, Posters & Flyers</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card pricing-card mt-5 mb-5">
+                            <div class="price-range">
+                                <h3 style="font-size: 20px;">$ 8 - 86 USD</h3>
+                            </div>
+                            <div class="price-for">
+                                <h1 style="font-size: 30px;">Graphics Package</h1>
+                            </div>
+
+                            <div class="price-description">
+                                <h3 style="font-size: 20px;">Graphics package products with negotiable prices</h3>
+                            </div>
+
+                            <div class="price-view">
+                                <button class="btn view-btn"><a href="https://wa.me/message/FZVEOKRRGZWRJ1" target="_blank">View Catalog</a></button>
+                                <hr class="underline">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4 me-3 card software-card">
+                            <div class="package-image"></div>
+                            <div class="package-name">
+                                <h1 style="font-size: 30px;">Software Package</h1>
+                            </div>
+                            <div class="package-description">
+                                <ul style="font-size: 15px;">
+                                    <li>Web Development</li>
+                                    <li>Android Development</li>
+                                    <li>Programming</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card pricing-card mt-5 mb-5">
+                            <div class="price-range">
+                                <h3 style="font-size: 20px;">$ 215 - 431 USD</h3>
+                            </div>
+                            <div class="price-for">
+                                <h1 style="font-size: 30px;">Software Package</h1>
+                            </div>
+
+                            <div class="price-description">
+                                <h3 style="font-size: 20px;">Software package products with negotiable prices</h3>
+                            </div>
+
+                            <div class="price-view">
+                                <button class="btn view-btn"><a href="https://github.com/albizzy" target="_blank">View Catalog</a></button>
+                                <hr class="underline">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4 card arts-card">
+                            <div class="package-image"></div>
+                            <div class="package-name">
+                                <h1 style="font-size: 30px;">Arts Package</h1>
+                            </div>
+                            <div class="package-description">
+                                <ul style="font-size: 15px;">
+                                    <li>Fine Arts</li>
+                                    <li>Music Beats</li>
+                                    <li>Photography</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card pricing-card mt-5 mb-5">
+                            <div class="price-range">
+                                <h3 style="font-size: 20px;">$ 21 - 129 USD</h3>
+                            </div>
+                            <div class="price-for">
+                                <h1 style="font-size: 30px;">Arts Package</h1>
+                            </div>
+
+                            <div class="price-description">
+                                <h3 style="font-size: 20px;">Art package products with negotiable prices</h3>
+                            </div>
+
+                            <div class="price-view">
+                                <button class="btn view-btn"><a href="https://wa.me/message/FZVEOKRRGZWRJ1" target="_blank">View Catalog</a></button>
+                                <hr class="underline">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-services-container">
+            <div class="row">
+                <div class="col-md-12" id="services">
+                    <h1 style="font-size: 60px;" class="col-md-12">My services</h1>
+                    <h3 class="col-md-12 mt-5 mb-5" style="font-size: 20px;">I offer quality services with elegance and even incredible perfomance. Work with me.</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="digital-illustrations">
+                            <h1>Digital Illustrations</h1>
+                            <h3>Want to improve your content? Make your brand stand out with some great digital illustrations for personal use and business at large.</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="coding">
+                            <h1>Coding</h1>
+                            <h3>You have some projects ideas but lack enough resources? Don't worry I got you covered. I offer coding services in most popular and powerful languages.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="tech-solutions">
+                            <h1>Tech solutions</h1>
+                            <h3>I offer tech solutions at large coverage. What's trending? What is the future of tech? I have the whole package just for you!.</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ui-ux">
+                            <h1>Ui & Ux</h1>
+                            <h3>Ask me about user interface (UI) and user experience (UX) design, I offer the best minimal designs with less money to pay.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid contacts-container" id="contact">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <h1 style="font-size: 40px;">Let's Get In Touch Today!</h1>
+                    <p class="mt-5" style="font-size: 20px;color: var(--text-color-shade);">want to work with me? or Are yo having any comments for me?. If Yes! Then this is your place contact me anytime and we will be in touch.</p>
+                    <a href="mailto:almwassy@gmail.com" target="blank" class="mt-5" style="border-bottom: 2px solid #fff;">contact@albert.com</a>
+                </div>
+
+                <div class="col-md-6 mt-5">
+                    <form action="mailto:almwassy@gmail.com" method="POST" enctype="text/plain" class="row g-2 needs-validation" novalidate>
+                        <div class="mb-3 col-md-6">
+                            <input type="text" class="form-control" name="fullname" placeholder="Your name" required>
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <input type="email" class="form-control" name="email" placeholder="Email address" required>
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <input type="email" class="form-control" name="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" id="floatingTextField" aria-label="With textarea" name="message" placeholder="How can I help?" style="height: 150px;" required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn browse-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-6 mt-5 mb-5 d-flex justify-content-evenly align-items-center">
+                    <a class="active-state" href="#home">Home</a>
+                    <a class="active-state" href="#about">About</a>
+                    <a class="active-state" href="#catalog">Catalog</a>
+                    <a class="active-state" href="#services">Services</a>
+                    <a class="active-state" href="#contact">Contact</a>
+                </div>
+                <div class="col-md-6 mt-5 mb-5 d-flex justify-content-around align-items-center">
+
+                    <a href="https://github.com/albizzy" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://wa.me/255757343945" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/iambizzy19/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://web.facebook.com/Almwassy" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://twitter.com/almwassy" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/albert-mwasisoba-479aa01a7/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-5 mb-3">
+                <div class="col-md-12">
+                    <p class="text-center" style="color: var(--text-color-shade);">Copyright &copy; iambizzy19 2021</p>
                 </div>
             </div>
         </div>
     </section>
 </body>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
