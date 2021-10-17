@@ -282,6 +282,12 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 
 .graphics-card {
