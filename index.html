@@ -95,7 +95,7 @@
                         </ul>
                     </div>
                     <div class="hire-me-area">
-                        <button class="btn hire-me-btn" id="hire-me-btn">Hire Me</button>
+                        <button class="btn hire-me-btn" id="hire-me-btn"><a href="#contact">Hire Me</a></button>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
 
                 <div class="row mt-5">
                     <div class="col-md-4">
-                        <div class="col-md-4 card graphics-card">
+                        <div class="card graphics-card">
                             <div class="package-image graphics-package"></div>
                             <div class="package-name">
                                 <h1 style="font-size: 30px;">Graphics Package</h1>
@@ -139,14 +139,14 @@
                             </div>
 
                             <div class="price-view">
-                                <button class="btn view-btn"><a href="https://wa.me/message/FZVEOKRRGZWRJ1" target="_blank">View Catalog</a></button>
+                                <button class="btn view-btn"><a href="https://wa.me/c/255757343945">View Catalog</a></button>
                                 <hr class="underline">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="col-md-4 me-3 card software-card">
+                        <div class="card software-card">
                             <div class="package-image"></div>
                             <div class="package-name">
                                 <h1 style="font-size: 30px;">Software Package</h1>
@@ -173,14 +173,14 @@
                             </div>
 
                             <div class="price-view">
-                                <button class="btn view-btn"><a href="https://github.com/albizzy" target="_blank">View Catalog</a></button>
+                                <button class="btn view-btn"><a href="https://github.com/albizzy">View Catalog</a></button>
                                 <hr class="underline">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="col-md-4 card arts-card">
+                        <div class="card arts-card">
                             <div class="package-image"></div>
                             <div class="package-name">
                                 <h1 style="font-size: 30px;">Arts Package</h1>
@@ -207,7 +207,7 @@
                             </div>
 
                             <div class="price-view">
-                                <button class="btn view-btn"><a href="https://wa.me/message/FZVEOKRRGZWRJ1" target="_blank">View Catalog</a></button>
+                                <button class="btn view-btn"><a href="https://wa.me/c/255757343945">View Catalog</a></button>
                                 <hr class="underline">
                             </div>
                         </div>
@@ -268,25 +268,29 @@
                 </div>
 
                 <div class="col-md-6 mt-5">
-                    <form action="mailto:almwassy@gmail.com" method="POST" enctype="text/plain" class="row g-2 needs-validation" novalidate>
+                    <form action="mailto:almwassy@gmail.com" method="POST" enctype="text/plain" class="row g-2" autofill="off" onsubmit="return(validate());" name="contactForm">
                         <div class="mb-3 col-md-6">
-                            <input type="text" class="form-control" name="fullname" placeholder="Your name" required>
+                            <p id="user-validate"></p>
+                            <input type="text" class="form-control" name="name" placeholder="Your name">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <input type="email" class="form-control" name="email" placeholder="Email address" required>
+                            <p id="email-validate"></p>
+                            <input type="email" class="form-control" name="email" placeholder="Email address">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                            <p id="phone-validate"></p>
+                            <input type="text" class="form-control" name="phone" placeholder="Phone">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <input type="email" class="form-control" name="subject" placeholder="Subject" required>
+                            <p id="subject-validate"></p>
+                            <input type="text" class="form-control" name="subject" placeholder="Subject">
                         </div>
 
                         <div class="mb-3">
-                            <textarea class="form-control" id="floatingTextField" aria-label="With textarea" name="message" placeholder="How can I help?" style="height: 150px;" required></textarea>
+                            <textarea class="form-control" id="floatingTextField" aria-label="With textarea" name="message" placeholder="How can I help?" style="height: 150px;"></textarea>
                         </div>
 
                         <div class="col-12">
@@ -346,6 +350,8 @@
             </div>
         </div>
     </section>
+
+    <script src="/js/main.js"></script>
 </body>
 
 <!-- Optional JavaScript; choose one of the two! -->
