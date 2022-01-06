@@ -178,12 +178,10 @@ a:hover {
 .catalog-container,
 .my-services-container,
 .contacts-container,
-#footer,
-.catalog-container {
+#footer {
     width: 100%;
     height: 100%;
     background: #222430;
-    padding: 2rem 2rem;
 }
 
 .image-card {
@@ -195,14 +193,6 @@ a:hover {
     border-radius: 2rem;
     transform: rotate(-5deg);
     z-index: 1;
-}
-
-.image-clone {
-    transform: rotate(8deg);
-    width: 350px;
-    height: 450px;
-    background: #432f30;
-    filter: blur(60px);
 }
 
 .about-header {
@@ -277,7 +267,6 @@ a:hover {
     background: transparent;
     border: 2px solid #fff;
     border-radius: 2rem;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -443,6 +432,7 @@ a:hover {
 
 .price-view:hover .underline {
     width: 7rem;
+    height: 2px;
     background: var(--accent-color);
 }
 

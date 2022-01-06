@@ -60,3 +60,28 @@ function validate() {
         document.contactForm.subject.classList.add('valid-focus')
     }
 }
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hello!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('My name is Albert,')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I am a Digital Creator,')
+    .pauseFor(2500)
+    .deleteChars(16)
+    .typeString('<strong>Graphic Designer,</strong>')
+    .pauseFor(2500)
+    .deleteChars(17)
+    .typeString('Software Developer,')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('And also an Artist.')
+    .pauseFor(2500)
+    .start()

@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albert Ferdinand - This is my portfolio</title>
+
+    <!-- Disable cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Albert Ferdinand | This is my portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -23,6 +29,9 @@
 
     <!-- main css styles -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Typewriter JS -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 
 <body>
@@ -64,9 +73,9 @@
                         </nav>
                     </section>
                 </div>
-                <div class="col-md-12 mt-5 my-description d-flex  flex-column justify-content-around" style="height: 600px;">
-                    <h1 style="font-size: 60px;">I'm Albert, <br> A Digital Creator.</h1>
-                    <p style="font-size: 20px;">I make awesome websites, softwares, illustrations, digital arts, fine arts, music beats and graphic products</p>
+                <div class="col-md-12 mt-5 my-description d-flex  flex-column justify-content-around p-0 p-5" style="height: 600px;">
+                    <h1 class="display-1 fw-bold" id="app">I'm Albert, <br></h1>
+                    <p class="display-6 fs-4">I make awesome websites, softwares, illustrations, digital arts, fine arts, music beats and graphic products</p>
                     <div class="cta-area">
                         <button class="btn browse-btn" id="browse-btn" onclick="location.href='#catalog'">Browse Catalog</button>
                     </div>
@@ -76,7 +85,7 @@
     </section>
 
     <section>
-        <div class=" container-fluid about-container">
+        <div class=" container-fluid about-container p-0 p-5">
             <div class="row d-flex align-items-center justify-content-around" id="about">
                 <div class="col-md-4 d-flex align-items-center" style="height: 600px;">
                     <div class="image-card"></div>
@@ -103,15 +112,15 @@
     </section>
 
     <section>
-        <div class="container-fluid catalog-container">
+        <div class="container-fluid catalog-container p-0 p-5">
             <div class="row">
-                <div class="col-md-12 catalog-header" id="catalog">
+                <div class="col-lg-12 catalog-header" id="catalog">
                     <h1 style="font-size: 60px;">My Catalog</h1>
                     <p style="font-size: 20px;" class="mt-5">Welcome to my catalog, the showroom to most of my amazing creations with even a cheaper price to pay.</p>
                 </div>
 
-                <div class="row mt-5">
-                    <div class="col-md-4">
+                <div class="row m-0 mt-5 p-0 p-1">
+                    <div class="col-lg-4">
                         <div class="card graphics-card" onclick="location.href='graphics-catalog.html'">
                             <div class="package-image graphics-package"></div>
                             <div class="package-name">
@@ -139,13 +148,13 @@
                             </div>
 
                             <div class="price-view">
-                                <button class="btn view-btn"><a href="https://wa.me/c/255757343945">View Catalog</a></button>
+                                <button class="btn view-btn"><a href="graphics-catalog.html">View Catalog</a></button>
                                 <hr class="underline">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card software-card" onclick="location.href='software-catalog.html'">
                             <div class="package-image"></div>
                             <div class="package-name">
@@ -160,7 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="card pricing-card mt-5 mb-5">
+                        <div class="card pricing-card m-0 mt-5 mb-5">
                             <div class="price-range">
                                 <h3 style="font-size: 20px;">$ 215 - 431 USD</h3>
                             </div>
@@ -173,13 +182,13 @@
                             </div>
 
                             <div class="price-view">
-                                <button class="btn view-btn"><a href="https://github.com/albizzy">View Catalog</a></button>
+                                <button class="btn view-btn"><a href="software-catalog.html">View Catalog</a></button>
                                 <hr class="underline">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card arts-card" onclick="location.href='arts-catalog.html'">
                             <div class="package-image"></div>
                             <div class="package-name">
@@ -194,7 +203,7 @@
                             </div>
                         </div>
 
-                        <div class="card pricing-card mt-5 mb-5">
+                        <div class="card pricing-card m-0 mt-5 mb-5">
                             <div class="price-range">
                                 <h3 style="font-size: 20px;">$ 21 - 129 USD</h3>
                             </div>
@@ -207,7 +216,7 @@
                             </div>
 
                             <div class="price-view">
-                                <button class="btn view-btn"><a href="https://wa.me/c/255757343945">View Catalog</a></button>
+                                <button class="btn view-btn"><a href="arts-catalog.html">View Catalog</a></button>
                                 <hr class="underline">
                             </div>
                         </div>
@@ -218,21 +227,21 @@
     </section>
 
     <section>
-        <div class="container my-services-container">
+        <div class="container my-services-container p-0 p-5">
             <div class="row">
-                <div class="col-md-12" id="services">
+                <div class="col-lg-12" id="services">
                     <h1 style="font-size: 60px;" class="col-md-12">My services</h1>
-                    <h3 class="col-md-12 mt-5 mb-5" style="font-size: 20px;">I offer quality services with elegance and even incredible perfomance. Work with me.</h3>
+                    <h3 class="col-lg-12 mt-5 mb-5" style="font-size: 20px;">I offer quality services with elegance and even incredible perfomance. Work with me.</h3>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 mb-3">
                         <div class="digital-illustrations">
                             <h1>Digital Illustrations</h1>
                             <h3>Want to improve your content? Make your brand stand out with some great digital illustrations for personal use and business at large.</h3>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 mb-3">
                         <div class="coding">
                             <h1>Coding</h1>
                             <h3>You have some projects ideas but lack enough resources? Don't worry I got you covered. I offer coding services in most popular and powerful languages.</h3>
@@ -241,13 +250,13 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 mb-3">
                         <div class="tech-solutions">
                             <h1>Tech solutions</h1>
                             <h3>I offer tech solutions at large coverage. What's trending? What is the future of tech? I have the whole package just for you!.</h3>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="ui-ux">
                             <h1>Ui & Ux</h1>
                             <h3>Ask me about user interface (UI) and user experience (UX) design, I offer the best minimal designs with less money to pay.</h3>
@@ -259,7 +268,7 @@
     </section>
 
     <section>
-        <div class="container-fluid contacts-container" id="contact">
+        <div class="container-fluid contacts-container p-0 p-5" id="contact">
             <div class="row">
                 <div class="col-md-6 mt-5">
                     <h1 style="font-size: 40px;">Let's Get In Touch Today!</h1>
@@ -365,6 +374,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
