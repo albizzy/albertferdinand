@@ -16,17 +16,17 @@ html:focus-within {
 
 ::-webkit-scrollbar {
     width: 5px;
-    background: #FBFBFF;
+    background: #0D0F0E;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #EB3349;
+    background: #FBFBFF;
 }
 
 body {
     width: 100%;
     height: 100vh;
-    background: #222430;
+    background: #0D0F0E;
     color: var(--text-color);
     overflow-x: hidden;
     font-family: 'Space Grotesk', sans-serif;
@@ -41,7 +41,7 @@ header {
 #nav-bar {
     height: 100%;
     width: 100%;
-    color: #17212d;
+    color: red;
 }
 
 .navbar {
@@ -127,7 +127,7 @@ a:hover {
     background: url("../assets/img/bg.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 130vh;
     padding: 1rem 2rem 2rem 1rem;
 }
 
@@ -181,7 +181,7 @@ a:hover {
 #footer {
     width: 100%;
     height: 100%;
-    background: #222430;
+    background: #0D0F0E;
     padding: 0;
 }
 
